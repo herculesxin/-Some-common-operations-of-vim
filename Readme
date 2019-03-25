@@ -1,0 +1,47 @@
+vim操作
+0.    find /home/ocr/*jpg>xx.txt
+1     touch +  akk.txt（文件名 ）
+创建文件akk.txt文件
+2.    vi 编辑器中跳到文件的第一行：
+　　 a  输入 :0 或者 :1   回车
+　　 b  键盘按下 小写 gg
+ 
+3.   vi 编辑器跳到文件最后一行：
+　　 a 输入 :$   回车
+　　 b 键盘按下大写 G
+　　 c 键盘按 shift + g    (其实和第二种方法一样)
+CTRL+G显示当前文件名
+读取自己名字
+r !ls %
+
+
+grep  -rn “hi” * 查看当前目录下所有含有此字符的文件
+Vim mark
+qa进入 做完q  重复数+@+a
+f+空格 跳一个空格
+d+shift+$删除后面的所有
+:%g!/someting/d  删除其他所有的
+
+Sh ***.sh >> output.log 把脚本输出到log文件类
+
+参考https://blog.51cto.com/luxiaok/965465
+.删除包含特定字符串的行，这也就是第一条一样的。
+:g/pattern/d 
+
+参考https://blog.csdn.net/chenyoper/article/details/78260007
+ndd:n为数字。删除光标所在的向下n行，例如20dd则是删除光标所在的向下20行
+.删除不含该字符串的行
+:% v/pattern/d 
+找到某个字符
+:/^0.9
+d0 删至行首。
+d$ 删至行尾。
+2、vim中块插入
+第一步：按下组合键“CTRL+v” 进入“可视 块”模式，选取这一列操作多少行
+第二步：按下shift+i(或者大写的字母"i")
+第三步：输入要插入的内容
+第四步：按ESC，之后就会看到插入的效果。 
+
+
+
+
